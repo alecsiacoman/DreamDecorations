@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dream Decorations</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,7 @@
     <!-- NAVBAR SECTION -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">DREAM DECORATIONS</a>
+            <a href="/DreamDeco/index.html" id="navbar__logo">DREAM DECORATIONS</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -22,105 +24,211 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links"> HauptseiteSee </a>
+                    <a href="#home" class="navbar__links"> HauptseiteSee </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links"> Über uns </a>
+                    <a href="#about" class="navbar__links"> Über uns </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links"> Produkte </a>
+                    <a href="#services" class="navbar__links"> Dienstleistungen </a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button"> Kontaktiere uns </a>
+                    <a href="#contact" class="button"> Kontaktiere uns </a>
                 </li>
             </ul>
         </div>
     </nav>
+
     <!-- HERO SECTION-->
-     <div class="main">
-        <div class="main__container">
+     <div class="main" id="home">
+        <div class="main__container" >
             <div class="main__content">
                 <h1>DREAM DECORATIONS</h1>
                 <h2>IHRE VERANSTALTUNG</h2>
                 <P>Sehen Sie, was uns von anderen unterscheidet</P>
-                <button class="main__btn"><a href="/">GALERIE</a></button>
-            </div>
-            <div class="name__img--container">
-                <img src="images/homepage.svg" alt="pic" class="main__img">
+                <button class="main__btn"><a href="#gallery">GALERIE</a></button>
             </div>
         </div>
      </div>
-     <!-- Services Section -->
-      <div class="services">
-        <h1>Wir lassen Ihre Traumveranstaltung wahr werden</h1>
-        <div class="services__container">
-            <div class="services__card">
-                <h2>Hochzeit</h2>
-                <p>Es wird eine Geschichte sein</p>
-                <button>Kontaktiere uns</button>
+
+    <!-- About us Section-->
+     <div class="about" id="about">
+        <h1 class="heading"> <span>Über</span> uns </h1>
+        <div class="row">
+            <div class="image">
+                <img src="/DreamDeco/images/aboutUs.jpg" alt="">
             </div>
+
+            <div class="about__content">
+                <h3>What is our vision?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minima harum similique deserunt? Minima,
+                     magni omnis praesentium enim excepturi sunt ipsam soluta, aut, ad quis odit officia vitae! Voluptatum, asperiores?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In adipisci culpa debitis, sint doloremque quidem nobis 
+                    quod perspiciatis a. Eum maxime consequatur similique nam, id eos omnis eveniet perferendis aliquam?</p>
+            </div>
+        </div>
+     </div>
+ 
+     <!-- Gallery Section -->
+     <div class="gallery" id="gallery">
+        <div class="gallery__container">
+            <div class="gallery-item gallery--item1">
+                <img src="/DreamDeco/images/aboutUs.jpg" data-index="1">
+            </div>
+            <div class="gallery-item gallery--item2">
+                <img src="/DreamDeco/images/botez..png" data-index="2">
+            </div>
+            <div class="gallery-item gallery--item3">
+                <img src="/DreamDeco/images/homepage.png" data-index="3">
+            </div>
+            <div class="gallery-item gallery--item4">
+                <img src="/DreamDeco/images/nastere.png" data-index="4">
+            </div>
+            <div class="gallery-item gallery--item5">
+                <img src="/DreamDeco/images/nunta.png" data-index="5">
+            </div>
+        </div>
+        <div class="gallery-controls"></div>
+      </div>
+
+     <!-- Services Section -->
+      <div class="services" id="services">
+        <h1>Wir lassen Ihre Traumveranstaltung wahr werden</h1>
+        <div class="services__container" id="services__container">
             <div class="services__card">
                 <h2>Taufe</h2>
                 <p>Eine unvergessliche Erinnerung</p>
-                <button>Kontaktiere uns</button>
+                <button><a href="#contact">Kontaktiere uns</a></button>
+            </div>
+            <div class="services__card">
+                <h2>Hochzeit</h2>
+                <p>Es wird eine Geschichte sein</p>
+                <button><a href="#contact">Kontaktiere uns</a></button>
             </div>
             <div class="services__card">
                 <h2>Geburtstag</h2>
                 <p>Wir machen Ihren Tag zu etwas Besonderem, wie Sie es verdienen</p>
-                <button>Kontaktiere uns</button>
+                <button><a href="#contact">Kontaktiere uns</a></button>
             </div>
         </div>
       </div>
+
+      <!-- Contact us -->
+       <div class="contact" id="contact">
+        <div class="contact__container">
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Lass uns Kontakt aufnehmen!</h3>
+                    <p class="text">Wir freuen uns darauf, uns kennenzulernen und Ihre Veranstaltung nach Ihren Wünschen zu dekorieren! Hinterlassen Sie eine Nachricht mit einigen Informationen und wir werden uns mit Ihnen in Verbindung setzen.</p>
+
+                    <div class="info">
+                        <div class="information">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Standort: Rastatt, Germany</p>
+                        </div>
+                        <div class="information">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>dreamdecorations.info@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+1 763-538-8073</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Verbinde dich mit uns:</p>
+                        <div class="social-icons">
+                          <a href="https://www.facebook.com/profile.php?id=61556009182374&locale=ro_RO">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="https://www.instagram.com/dreamdecorations_rastatt/">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-form">
+                    <form action="index.html" autocomplete="off">
+                        <h3 class="title">Kontaktiere uns</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" id = "name">
+                            <label for="">Name</label>
+                            <span>Name</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" id="email">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input" id="phone">
+                            <label for="">Telefonnummer</label>
+                            <span>Telefonnummer</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input" id="message"></textarea>
+                            <label for="">Nachricht</label>
+                            <span>Nachricht</span>
+                        </div>
+                        <input type="submit" value="Schicken" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+       </div>
+
 
       <!-- Footer Section -->
        <div class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wraper">
-                <div class="footer__link--items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a>
-                    <a href="/">Testimonials</a>
-                    <a href="/">Careers</a>
-                    <a href="/">Investements</a>
-                    <a href="/">Terms of service</a>
-                </div>
-            </div>
-            <div class="footer__link--wraper">
-                <div class="footer__link--items">
-                    <h2>Services</h2>
-                    <a href="/">Wedding</a>
-                    <a href="/">Birthday Party</a>
-                    <a href="/">Botez</a>
-                    <a href="/">Orice alt fel de petrecere</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Contact Information</h2>
-                    <a href="/">Phone number</a>
-                    <a href="/">Email</a>
-                    <a href="/">City</a>
-                </div>
-                <div class="footer__link--items">
-                    <h2>Social Media</h2>
-                    <a href="/">Facebook</a>
-                    <a href="/">Instagram</a>
-                    <a href="/">Whatsapp</a>
-                </div>
-                <div class="footer__link--items">
-                </div>
-            </div>
-        </div>
-        <div class="social__media">
-            <div class="social__media--wrap">
+            
                 <div class="footer__logo">
-                    <a href="/" id="footer__logo">
+                    <a href="/DreamDeco/index.html" id="footer__logo">
                         <p>Dream Decorations</p>
                     </a>
                 </div>
+
+                <div class="footer__link--items">
+                    
+                    <h2>Dienstleistungen</h2>
+                    <a href="/">Hochzeit</a>
+                    <a href="/">Geburtstag</a>
+                    <a href="/">Taufe</a>
+                    <a href="/">Jede Art von Veranstaltung</a>
+                </div>
+
+                <div class="footer__link--items">
+                    <h2>Kontaktinformationen</h2>
+                    <a href="/">Rastatt, Germany</a>
+                    <a href="/">dreamdecorations.info@gmail.com</a>
+                    <a href="/">+1 763-538-8073</a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer__line">
+        <div class="social__media">
+            <div class="social__media--items">
+                <a href="https://www.facebook.com/profile.php?id=61556009182374&locale=ro_RO">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.instagram.com/dreamdecorations_rastatt/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+            </div>
+            
+            <div class="social__media--wrap">
                 <p class="website__rights">@ 2023 Dreams Decorations </p>
-                <p class="developer">Developed by Alecsia Coman - <a href="/">LinkedIn</a></p>
+                <p class="developer">Entwickelt von Alecsia Coman - <a href="https://www.linkedin.com/in/alecsia-coman-618250203/">LinkedIn</a></p>
             </div>
         </div>
        </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
