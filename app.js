@@ -1,10 +1,33 @@
-const menu = document.querySelector('#mobile-menu')
-const menuLinks = document.querySelector('.navbar__menu')
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector("#mobile-menu");
+    const menu = document.querySelector(".navbar__menu");
+    const menuLinks = document.querySelectorAll(".navbar__links");
+    const contactButton = document.querySelector(".button"); // Select the button with class 'button'
 
-menu.addEventListener('click', function() {
-    menu.classList.toggle('is-active')
-    menuLinks.classList.toggle('active')
-})
+    // Function to toggle the menu
+    menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("active");
+        menuToggle.classList.toggle("is-active");
+    });
+
+    // Function to close the menu when a link is clicked
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function() {
+            menu.classList.remove("active");
+            menuToggle.classList.remove("is-active");
+        });
+    });
+
+    // Function to close the menu when the contact button is clicked
+    if (contactButton) { // Check if the button exists
+        contactButton.addEventListener("click", function() {
+            menu.classList.remove("active");
+            menuToggle.classList.remove("is-active");
+        });
+    }
+});
+
+
 
 
 const galleryContainer = document.querySelector('.gallery__container');
