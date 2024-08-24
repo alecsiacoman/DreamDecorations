@@ -465,7 +465,7 @@
     background: #F4F4F4;
     position: relative;
     overflow: hidden;
-    padding-top: 7rem;
+    padding-top: 8rem;
 }
 
 .gallery__container {
@@ -623,7 +623,7 @@
 }
 @media screen and (max-width: 480px) {
     .gallery {
-        padding: 0.9rem;
+        padding-top: 0.09rem;
         overflow: hidden;
         position: relative;
         background: #F4F4F4;
@@ -637,6 +637,7 @@
         max-width: 100%;
         position: relative;
         background: transparent;
+        margin-top: 100px;
     }
 
     .gallery-item {
@@ -1147,8 +1148,8 @@
   }
   
   @media (max-width: 480px) {
-    .container {
-      padding: 1.5rem;
+    .contact__container {
+      padding-top: 4.5rem;
     }
   
     .contact-info:before {
@@ -1199,19 +1200,23 @@
     align-items: center;
 }
 
-#footer__logo {
-    color: #fff;
+.footer__logo img {
+    max-width: 100%; 
+    height: auto;
+    width: 150px; 
+    margin-bottom: 16px; 
+}
+
+.footer__logo {
     display: flex;
     align-items: center;
-    text-align: left;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+    justify-content: center; /* Center the logo horizontally */
+    margin-bottom: 16px; /* Ensure consistent spacing below the logo */
+    margin-right: 40px;
 }
 
 .footer__links {
     width: 100%;
-    max-width: 200px;
     display: flex;
     justify-content: center;
 }
@@ -1224,7 +1229,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 20px;
+    margin: 20px 40px;
     align-items: left;
     text-align: left;
     width: 200px;
@@ -1258,19 +1263,6 @@
     width: 100%;
     max-width: 1000px;
     margin: 40px auto 0 auto;
-}
-
-.footer__logo {
-    color: #e9e9e9;
-    justify-self: flex-start;
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 16px;
 }
 
 .footer__line {
@@ -1345,6 +1337,7 @@
 
     .footer__link--items h2 {
         margin-bottom: 12px; /* Adjust margin for smaller screens */
+        margin-top: 15px;
     }
 
     .footer__link--items a {
