@@ -91,39 +91,25 @@ inputs.forEach((input) => {
 
 
 
-
+const FORMSPARK_ACTION_URL = "https://submit-form.com/sVqEj3FvV";
 const form = document.querySelector("form");
 const fullName = document.querySelector("#name");
 const email = document.querySelector("#email");
 const phone = document.querySelector("#phone");
 const mess = document.querySelector("#message");
 
-function sendEmail() {
-    const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br>
-    Phone Number: ${phone.value}<br> Message: ${mess.value}`;
+async function submitForm() {
+    if (!dataConsent.value) {
+        mustCheck.value = true;
+        toast.add({severity: "warn", summary: "Consent required to submit. Please check the box.", life: 5000});
+        return;
+    }
+    
+    email.value = ""
+    name.value = ""
+    message.value = ""
+    dataConsent.value = false
+    mustCheck.value = false
 
-    Email.send({
-        SecureToken: "41316e49-be16-4639-8d1d-9f118dcb08f6",
-        To : 'dreamdecorations.info@gmail.com',
-        From : email.value,
-        Subject : "Eveniment Dream Decorations",
-        Body : mess.value
-    }).then(
-        message => {
-            if (message == "OK") {
-            Swal.fire({
-                title: "Erfolg!",
-                text: "Nachricht gesendet!",
-                icon: "success"
-              });
-              }
-            else alert(message)
-        }
-    );
+    toast.add({severity: "success", summary: "Submitted", detail: "Thanks for contacting us!", life: 30000});
 }
-
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    sendEmail();
-})

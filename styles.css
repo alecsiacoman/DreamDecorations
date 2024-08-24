@@ -350,6 +350,7 @@
 .about {
     background: #F4F4F4;
     padding-top: 80px;
+    padding-bottom: 10px;
 }
 
 .heading {
@@ -623,7 +624,7 @@
 @media screen and (max-width: 480px) {
     .gallery {
         padding: 0.9rem;
-        overflow: visible;
+        overflow: hidden;
         position: relative;
         background: #F4F4F4;
     }
@@ -863,11 +864,11 @@
         font-size: 2rem;
         text-align: center;
         padding-top: 0;
-        margin: 2rem 1rem;
+        margin: 1rem 1rem;
     }
 
     .services__card {
-        width: 300px;
+        width: 350px;
     }
 }
 
